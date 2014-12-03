@@ -1,0 +1,82 @@
+pushbullet.jax*
+			Pushbullet poster
+
+Version: 1.0
+Author: mugetu
+License: MIT license  {{{
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy of this software and associated documentation files (the
+    "Software"), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+}}}
+
+==============================================================================
+目次						*pushbullet-contents*
+
+概要						|pushbullet-introduction|
+インターフェース				|pushbullet-interface|
+	コマンド				|pushbullet-commands|
+	関数					|pushbullet-functions|
+	キーマッピング				|pushbullet-key-mappings|
+カスタマイズ					|pushbullet-customizing|
+更新履歴					|pushbullet-changelog|
+
+==============================================================================
+概要						*pushbullet-introduction*
+
+*pushbullet.vim* は、Vim 上で Pushbullet(https://www.pushbullet.com) へ
+POST を行なうプラグインです。
+
+要件:
+- Vim 7.0 以降
+
+==============================================================================
+インターフェース				*pushbullet-interface*
+
+==============================================================================
+コマンド					*pushbullet-commands*
+
+:Pushb			*:Pushb* ([message]) ([title])
+			Pushbullet に POST します。
+
+			message はオプションです。
+			指定されない場合、カレントバッファのカレント行を
+			送信します。
+
+			title はオプションです。
+
+==============================================================================
+関数						*pushbullet-functions*
+
+==============================================================================
+キーマッピング					*pushbullet-key-mappings*
+
+==============================================================================
+カスタマイズ					*pushbullet-customizing*
+
+g:pushbullet_accesstoken			*g:pushbullet_accesstoken*
+			Pushbullet Web ページ の My Account にある
+			Access Token に指定されたトークンを指定する必要があります。
+
+==============================================================================
+更新履歴					*pushbullet-changelog*
+
+1.0			2014/12/03
+			- 初版。
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
